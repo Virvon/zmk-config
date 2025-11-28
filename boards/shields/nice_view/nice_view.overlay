@@ -1,0 +1,22 @@
+/ {
+    chosen {
+        zmk,display = &nice_view;
+    };
+};
+
+&spi0 {
+    compatible = "nordic,nrf-spim";
+    status = "okay";
+    // sck-pin = <...>;
+    // mosi-pin = <...>;
+    
+    nice_view: ls0xx@0 {
+        compatible = "sharp,ls0xx";
+        label = "DISPLAY";
+        spi-max-frequency = <2000000>;
+        reg = <0>;
+        width = <160>;
+        height = <68>;
+        // Другие необходимые параметры
+    };
+};
