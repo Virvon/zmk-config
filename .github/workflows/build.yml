@@ -4,3 +4,7 @@ on: [push, pull_request, workflow_dispatch]
 jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3
+    with:
+      extra_pre_build_steps: |
+        - name: Show nice_view.overlay
+          run: cat "${{ github.workspace }}/boards/shields/nice_view/nice_view.overlay"
