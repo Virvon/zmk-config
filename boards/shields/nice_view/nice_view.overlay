@@ -7,8 +7,10 @@
 &spi0 {
     compatible = "nordic,nrf-spim";
     status = "okay";
-    // sck-pin = <...>;
-    // mosi-pin = <...>;
+    sck-pin = <5>;
+    mosi-pin = <3>;
+    
+    cs-gpios = <&gpio0 4 GPIO_ACTIVE_LOW>;
     
     nice_view: ls0xx@0 {
         compatible = "sharp,ls0xx";
@@ -17,6 +19,6 @@
         reg = <0>;
         width = <160>;
         height = <68>;
-        // Другие необходимые параметры
+        disp-en-gpios = <&gpio0 21 GPIO_ACTIVE_HIGH>;
     };
 };
