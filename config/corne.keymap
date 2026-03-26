@@ -40,6 +40,16 @@ combo_##NAME { \
         compatible = "zmk,combos";
 
         COMBO(escape, 50, &kp ESC, 0 1, 0)
+
+        left_parenthesis {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <6 7>;
+        };
+
+        right_parenthesis {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <7 8>;
+        };
     };
 
     behaviors {
@@ -69,7 +79,7 @@ combo_##NAME { \
             bindings = <&mo>, <&to>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <200>;
             flavor = "hold-preferred";
         };
     };

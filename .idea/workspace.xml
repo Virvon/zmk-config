@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8d967cf-dede-450e-8f78-8b9d128de0a1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/corne.keymap" beforeDir="false" afterPath="$PROJECT_DIR$/config/corne.keymap" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
