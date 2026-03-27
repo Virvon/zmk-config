@@ -56,6 +56,16 @@ combo_##NAME { \
             key-positions = <16 17>;
             layers = <0>;
         };
+
+        test2 {
+            bindings = <&kp KP_LEFT_PARENTHESIS>;
+            key-positions = <18 19>;
+        };
+
+        test3 {
+            bindings = <&kp LPAR>;
+            key-positions = <30 31>;
+        };
     };
 
     behaviors {
