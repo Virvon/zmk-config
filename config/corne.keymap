@@ -75,6 +75,21 @@ combo_##NAME { \
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <31 32>;
         };
+
+        grave {
+            bindings = <&kp GRAVE>;
+            key-positions = <16 17>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <28 29>;
+        };
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <4 5>;
+        };
     };
 
     behaviors {
@@ -108,11 +123,11 @@ combo_##NAME { \
             flavor = "hold-preferred";
         };
 
-        td_o: td_o {
+        td_n: td_n {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_O";
+            label = "TD_N";
             #binding-cells = <0>;
-            bindings = <&kp O>, <&kp SEMICOLON>;
+            bindings = <&kp N>, <&kp SEMICOLON>;
         };
     };
 
@@ -140,10 +155,10 @@ combo_##NAME { \
             //                               '--------+---------+---------'       '-------+---------+---------'
 
             bindings = <
-&none  &kp Q  &kp W  &kp F          &kp P           &kp B        &kp J       &kp L              &kp U      &kp Y    &kp SEMI  &none
-&none  &kp A  &kp R  &kp S          &kp T           &kp G        &kp M       &kp N              &kp R      &kp I    &td_o     &none
-&none  &kp Z  &kp X  &kp C          &kp D           &kp V        &kp K       &kp H              &kp COMMA  &kp DOT  &kp FSLH  &none
-                     &kp BACKSPACE  &kp LEFT_SHIFT  &kp SPACE    &mo_to 1 2  &kp RIGHT_CONTROL  &kp ENTER
+&none  &kp Q           &kp W           &kp F          &kp P           &kp B        &kp J  &kp L              &kp U      &kp Y    &kp SEMI  &none
+&none  &kp A           &kp R           &kp S          &kp T           &kp G        &kp M  &td_n              &kp R      &kp I    &kp O     &none
+&none  &mt LEFT_WIN Z  &mt LEFT_ALT X  &kp C          &kp D           &kp V        &kp K  &kp H              &kp COMMA  &kp DOT  &kp FSLH  &none
+                                       &kp BACKSPACE  &kp LEFT_SHIFT  &kp SPACE    &mo 1  &kp RIGHT_CONTROL  &kp ENTER
             >;
         };
 
@@ -159,10 +174,10 @@ combo_##NAME { \
             //                             '--------+----------+----------'       '--------+---------+---------'
 
             bindings = <
-&trans  &kp N1      &kp N2        &kp N3        &kp N4       &kp N5        &kp N6    &kp N7      &kp N8  &kp N9     &kp N0  &trans
-&trans  &kp K_MUTE  &kp K_VOL_DN  &kp K_VOL_UP  &kp K_NEXT   &kp C_PLAY    &kp LEFT  &kp DOWN    &kp UP  &kp RIGHT  &trans  &trans
-&trans  &kp K_UNDO  &kp K_CUT     &kp K_COPY    &kp K_PASTE  &kp PG_DN     &kp CAPS  &kp INSERT  &trans  &trans     &trans  &trans
-                                  &trans        &trans       &trans        &trans    &trans      &trans
+&none  &kp N1  &kp N2          &kp N3          &kp N4           &kp N5    &kp N6                   &kp N7           &kp N8             &kp N9      &kp N0      &none
+&none  &none   &none           &kp UP_ARROW    &none            &none     &mt K_MUTE C_PLAY_PAUSE  &kp K_VOLUME_UP  &kp K_VOLUME_DOWN  &kp K_NEXT  &kp K_PREV  &none
+&none  &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none     &none                    &none            &none              &none       &none       &none
+                               &trans          &trans           &trans    &trans                   &trans           &trans
             >;
         };
 
