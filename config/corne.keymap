@@ -155,9 +155,9 @@ combo_##NAME { \
             //                               '--------+---------+---------'       '-------+---------+---------'
 
             bindings = <
-&none  &kp Q           &kp W           &kp F          &kp P           &kp B        &kp J  &kp L              &kp U      &kp Y    &kp SEMI  &none
-&none  &kp A           &kp R           &kp S          &kp T           &kp G        &kp M  &td_n              &kp R      &kp I    &kp O     &none
-&none  &mt LEFT_WIN Z  &mt LEFT_ALT X  &kp C          &kp D           &kp V        &kp K  &kp H              &kp COMMA  &kp DOT  &kp FSLH  &none
+&kp Q           &kp W           &kp F          &kp P           &kp B        &kp J  &kp L              &kp U      &kp Y    &kp SEMI
+&kp A           &kp R           &kp S          &kp T           &kp G        &kp M  &td_n              &kp R      &kp I    &kp O
+&mt LEFT_WIN Z  &mt LEFT_ALT X  &kp C          &kp D           &kp V        &kp K  &kp H              &kp COMMA  &kp DOT  &kp FSLH
                                        &kp BACKSPACE  &kp LEFT_SHIFT  &kp SPACE    &mo 1  &kp RIGHT_CONTROL  &kp ENTER
             >;
         };
@@ -174,9 +174,9 @@ combo_##NAME { \
             //                             '--------+----------+----------'       '--------+---------+---------'
 
             bindings = <
-&none  &kp N1  &kp N2          &kp N3          &kp N4           &kp N5    &kp N6                   &kp N7           &kp N8             &kp N9      &kp N0      &none
-&none  &none   &none           &kp UP_ARROW    &none            &none     &mt K_MUTE C_PLAY_PAUSE  &kp K_VOLUME_UP  &kp K_VOLUME_DOWN  &kp K_NEXT  &kp K_PREV  &none
-&none  &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none     &none                    &none            &none              &none       &none       &none
+&kp N1  &kp N2          &kp N3          &kp N4           &kp N5    &kp N6                   &kp N7           &kp N8             &kp N9      &kp N0
+&none   &none           &kp UP_ARROW    &none            &none     &mt K_MUTE C_PLAY_PAUSE  &kp K_VOLUME_UP  &kp K_VOLUME_DOWN  &kp K_NEXT  &kp K_PREV
+&none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none     &none                    &none            &none              &none       &none
                                &trans          &trans           &trans    &trans                   &trans           &trans
             >;
         };
@@ -193,9 +193,9 @@ combo_##NAME { \
             //                               '--------+---------+---------'       '-------+---------+---------'
 
             bindings = <
-&kp ESC  &kp EXCL   &kp AT    &kp HASH   &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR   &trans
-&trans   &kp UNDER  &kp PLUS  &kp EQUAL  &kp PIPE  &kp MINUS    &kp HOME   &kp PG_DN  &kp PG_UP  &kp END   &kp PSCRN  &kp GRAVE
-&trans   &kp BSLH   &kp LT    &kp LBRC   &kp LPAR  &kp LBKT     &kp RBKT   &kp RPAR   &kp RBRC   &kp GT    &kp FSLH   &trans
+&kp EXCL   &kp AT    &kp HASH   &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR
+&kp UNDER  &kp PLUS  &kp EQUAL  &kp PIPE  &kp MINUS    &kp HOME   &kp PG_DN  &kp PG_UP  &kp END   &kp PSCRN
+&kp BSLH   &kp LT    &kp LBRC   &kp LPAR  &kp LBKT     &kp RBKT   &kp RPAR   &kp RBRC   &kp GT    &kp FSLH
                               &trans     &trans    &trans       &to 0      &trans     &trans
             >;
         };
@@ -212,9 +212,9 @@ combo_##NAME { \
             //                              '--------+---------+---------'       '--------+--------+---------'
 
             bindings = <
-&sys_reset  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6  &kp F7  &kp F8  &kp F9   &kp F10  &sys_reset
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &kp F11  &kp F12  &trans
-&trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans   &trans   &trans
+&kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6  &kp F7  &kp F8  &kp F9   &kp F10
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &kp F11  &kp F12
+&trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans   &trans
                                         &trans        &trans        &trans          &trans  &trans  &trans
             >;
         };
