@@ -114,12 +114,6 @@ combo_##NAME { \
             #binding-cells = <0>;
             bindings = <&kp O>, <&kp SEMICOLON>;
         };
-
-        td3: tap_dance_3 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <2>;
-            bindings = <&kp>, <&kp>;
-        };
     };
 
     conditional_layers {
@@ -147,7 +141,7 @@ combo_##NAME { \
 
             bindings = <
 &none  &kp Q  &kp W  &kp F          &kp P           &kp B        &kp J       &kp L              &kp U      &kp Y    &kp SEMI  &none
-&none  &kp A  &kp R  &kp S          &kp T           &kp G        &kp M       &kp N              &kp R      &kp I    &td3 O SEMICOLON     &none
+&none  &kp A  &kp R  &kp S          &kp T           &kp G        &kp M       &kp N              &kp R      &kp I    &td_o     &none
 &none  &kp Z  &kp X  &kp C          &kp D           &kp V        &kp K       &kp H              &kp COMMA  &kp DOT  &kp FSLH  &none
                      &kp BACKSPACE  &kp LEFT_SHIFT  &kp SPACE    &mo_to 1 2  &kp RIGHT_CONTROL  &kp ENTER
             >;
